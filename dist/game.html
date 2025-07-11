@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+  <script type="module" crossorigin src="/TOP_tic-tac-toe/assets/main-CX2WshxW.js"></script>
+  <link rel="stylesheet" crossorigin href="/TOP_tic-tac-toe/assets/main-dhmxjdqZ.css">
+</head>
+
+<body id="game-page" class="in-game flex flex-col">
+  <header class="grid grid-cols-3 text-center w-full justify-center items-center h-50">
+      <div class="col-span-1">
+        <h1 class="text-6xl text-[black] text-right" id="p1-turn">your turn...</h1>
+      </div>
+      <div class="flex flex-row text-center justify-center w-full gap-4">
+        <h1 class="text-7xl p-0 hidden" id="victory-call">Player One Won</h1> <button class="rounded-full hidden" id="retry"><i class="ph ph-arrow-u-up-left text-4xl font-bold"></i></button>
+      </div>
+      <div class="col-span-1">
+        <h1 class="text-6xl text-[black] hidden text-left" id="p2-turn">bot's turn...</h1>
+      </div>
+  </header>
+  <div class="flex flex-col justify-center text-center items-center w-full">
+  </div>
+  <div class="flex flex-row w-full items-center justify-center">
+    <section
+      class="bg-[var(--background-color-black)] flex flex-col justify-center items-center border-5 rounded-4xl p-0 border-b-20 mb-10 gap-20 overflow-hidden">
+      <!-- Title -->
+      <div class="grid grid-cols-[2fr_6fr_2fr]">
+        <div class="bg-[var(--secondary-blue)] rounded-l-5xl border-r-5 ">
+          <div
+            class="flex flex-col items-center border-b-30 border-b-[rgb(0,0,0,0.15)] border-t-30 border-t-[rgb(255,255,255,0.3)] h-full">
+            <div class="rounded-full justify-self-start bg-[rgb(83,83,83)] h-45 w-45 mb-18 mt-15 border-5 border-b-10">
+              <div
+                class="flex h-full rounded-full border-10 border-[rgb(63,63,63)] text-center justify-center items-center">
+                <img src="/TOP_tic-tac-toe/player1.png" alt="">
+              </div>
+            </div>
+
+
+            <div class="flex flex-col gap-1 items-center">
+              <div class="rounded-full justify-self-end bg-[rgb(83,83,83)] h-10 w-10 border-5 border-b-7">
+                <div class="circle text-[rgb(255,255,255,0.6)]">w</div>
+              </div>
+              <div class="flex flex-row gap-10">
+                <div class="rounded-full justify-self-end bg-[rgb(83,83,83)] h-10 w-10 border-5 border-b-7">
+                  <div class="circle text-[rgb(255,255,255,0.6)]">a</div>
+                </div>
+                <div class="rounded-full justify-self-end bg-[rgb(83,83,83)] h-10 w-10 border-5 border-b-7">
+                  <div class="circle text-[rgb(255,255,255,0.6)]">s</div>
+                </div>
+              </div>
+              <div class="rounded-full justify-self-end bg-[rgb(83,83,83)] h-10 w-10 border-5 border-b-7">
+                <div class="circle text-[rgb(255,255,255,0.6)]">d</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game Grid -->
+        <div class="border-30 border-[rgb(0,0,0,0.4)]">
+          <main class="flex flex-row items-center justify-center m-5 px-30 py-5">
+            <section class="flex flex-row justify-center items-center">
+              <div class="grid grid-cols-[1fr_1fr_1fr] grid-rows-[1fr_1fr_1fr] w-120 h-120 items-center gap-2"
+                id="game-grid">
+              </div>
+            </section>
+          </main>
+        </div>
+
+        <div class="bg-[var(--primary-red)] rounded-r-5xl border-l-5" id="red">
+          <div
+            class="flex flex-col items-center border-b-30 border-b-[rgb(0,0,0,0.15)] border-t-30 border-t-[rgb(255,255,255,0.3)] h-full">
+
+            <div class="flex flex-col gap-1 items-center mt-15 mb-20">
+              <div class="rounded-full justify-self-end bg-[rgb(83,83,83)] h-10 w-10 border-5 border-b-7">
+                <div class="circle text-[rgb(255,255,255,0.6)]">w</div>
+              </div>
+              <div class="flex flex-row gap-10">
+                <div class="rounded-full justify-self-end bg-[rgb(83,83,83)] h-10 w-10 border-5 border-b-7">
+                  <div class="circle text-[rgb(255,255,255,0.6)]">a</div>
+                </div>
+                <div class="rounded-full justify-self-end bg-[rgb(83,83,83)] h-10 w-10 border-5 border-b-7">
+                  <div class="circle text-[rgb(255,255,255,0.6)]">s</div>
+                </div>
+              </div>
+              <div class="rounded-full justify-self-end bg-[rgb(83,83,83)] h-10 w-10 border-5 border-b-7">
+                <div class="circle text-[rgb(255,255,255,0.6)]">d</div>
+              </div>
+            </div>
+
+            <div class="rounded-full justify-self-start bg-[rgb(83,83,83)] h-45 w-45 border-5 border-b-10">
+              <div
+                class="flex h-full rounded-full border-10 border-[rgb(63,63,63)] text-center justify-center items-center">
+                <img src="/TOP_tic-tac-toe/player2.png" alt="">
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
