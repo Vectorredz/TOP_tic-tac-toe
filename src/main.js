@@ -1,4 +1,4 @@
-import './style.css'
+import './styles/index.css'
 
 const ROWS = 3
 const COLS = 3

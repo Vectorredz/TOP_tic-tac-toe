@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@layer base {
+    a {
+        font-weight: 500;
+        text-decoration: inherit;
+    }
+
+    body {
+        margin: 0;
+        display: flex;
+        min-width: 320px;
+        min-height: 100vh;
+    }
+
+    h1 {
+        line-height: 1.1;
+    }
+
+    #app {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    @font-face {
+        font-family: lucidity-condensed;
+        font-style: normal;
+        font-weight: 200 700;
+        font-display: swap;
+        src: url("../../public/lucidity-condensed.ttf") format("truetype");
+    }
+}

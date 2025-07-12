@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@layer components {
+    .circle {
+        @apply flex h-full rounded-full border-5 text-center justify-center items-center;
+        border-color: rgb(63, 63, 63);
+    }
+
+    .in-game {
+        @apply bg-linear-to-r from-[#4074dc] from-50% to-[#e02424] to-50%
+    }
+
+    .p2-win {
+        @apply bg-[#e02424]
+    }
+
+    .tie {
+        @apply bg-[var(--primary-yellow)]
+    }
+
+    .p1-win {
+        @apply bg-[#4074dc]
+    }
+
+    .cell {
+        @apply h-[100%] w-[100%] border-black rounded-3xl;
+        background-color: rgb(255, 255, 255, 0.7);
+    }
+
+    .logo {
+        height: 6em;
+        padding: 1.5em;
+        will-change: filter;
+        transition: filter 300ms;
+    }
+
+    .logo:hover {
+        filter: drop-shadow(0 0 2em #646cffaa);
+    }
+
+    .logo.vanilla:hover {
+        filter: drop-shadow(0 0 2em #f7df1eaa);
+    }
+
+    .card {
+        padding: 2em;
+    }
+
+    .read-the-docs {
+        color: #888;
+    }
+
+    button {
+        border-radius: 22px;
+        border: 4px solid black;
+        border-bottom: 14px solid black;
+        padding: 0.6em 1.2em;
+        font-family: inherit;
+        background-color: var(--primary-yellow);
+        cursor: pointer;
+        transition: border-color 0.25s;
+    }
+
+    button:active {
+        transform: translateY(4px);
+        background-color: var(--secondary-yellow);
+        border-bottom: 9px solid black;
+    }
+}
