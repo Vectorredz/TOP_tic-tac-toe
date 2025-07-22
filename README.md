@@ -2,4 +2,5 @@
 
 ## Simple tic-tac-toe game
 
-![alt text](image.png)
+![alt text](public/image.png)
+![alt text](public/image-1.png)
